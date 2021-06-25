@@ -12,8 +12,8 @@ IS_FULLTIME_JOB - офис
 IS_REMOTE_JOB = True
 IS_FULLTIME_JOB = False
 
-TELEGRAM_API_KEY = '1723692698:AAHSErrcQLPCWnxKDFE292Rtcpzi_2Rkb_8'
-TELEGRAM_CHAT_ID = 1391057391
+TELEGRAM_API_KEY = ''
+TELEGRAM_CHAT_ID = 0
 
 """
 Укажите слова, которых не должно быть в заголовке вакансии. Например, python используется в множестве профессий, так что
@@ -24,10 +24,7 @@ IGNORED_WORDS_IN_TITLE = {'qa', 'devops', 'java'}
 
 ВАЖНО! Используйте буквы только в нижнем регистре (lowercase).
 """
-IGNORED_WORDS_IN_TITLE = {'fullstack', 'full-stack', 'full', 'recruiter',
-                          'java', 'unity', 'курс', 'онлайнкурс', 'курса', 'онлайнкурса', 'support', 'ruby', 'аналитик',
-                          'qa', 'devops', 'affilate', 'преподаватель', 'smm', 'с', 'c', 'go', 'golang',
-                          'analyst', 'менеджер', 'frontend', 'front-end', 'marketing', 'data'}
+IGNORED_WORDS_IN_TITLE = {}
 
 """
 Укажите вакансии для парсинга. Вы можете разделить вакансии по разным спискам. Например, вы согласны работать удаленно
@@ -37,7 +34,7 @@ IGNORED_WORDS_IN_TITLE = {'fullstack', 'full-stack', 'full', 'recruiter',
 REMOTE_JOBS = ('middle QA')
 FULLTIME_JOBS = ('python junior', 'fullstack junior')
 """
-REMOTE_JOBS = ('Junior python', 'python', 'django', 'junior django')
+REMOTE_JOBS = ()
 FULLTIME_JOBS = ()
 
 """
@@ -47,7 +44,5 @@ FULLTIME_JOBS = ()
 Не рекомендуется использовать COOKIES авторизованного пользователя. Теоретически, это может привести к 
 блокировке аккаунта.
 """
-COOKIES = '__ddg1=g7JnzpX4bxR1KwrHzUEs; _xsrf=437c9bcaf21187307f17fbbc766d1895; ' \
-          'hhtoken=JJAu88WjJ55IXPVC!qaPkf82v3r5; hhuid=7g4vwhDksLJfVmDTCcAy8g--; region_clarified=NOT_SET; ' \
-          '_xsrf=437c9bcaf21187307f17fbbc766d1895; display=desktop; hhrole=anonymous; regions=56 '
-USER_AGENT = 'PostmanRuntime/7.28.0'
+COOKIES = ''
+USER_AGENT = ''
